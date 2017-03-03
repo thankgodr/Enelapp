@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.shixels.thankgodrichard.enellottoapp.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/titlecontainer"
+                android:layout_height="match_parent">
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_fontIconResource="&#xf0c9;"
+                    fancy:fb_textColor="@android:color/white"
+                    android:id="@+id/menuopen"
+                    android:layout_alignParentLeft="true"
+                    fancy:fb_text=""
+                    fancy:fb_fontIconSize="20dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/full_logo_white"
+                    android:layout_height="41dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+    <com.ss.bottomnavigation.BottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary">
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_games"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="Games"
+            app:tab_text_color="@android:color/white"
+            app:tab_icon="@drawable/lottery_balls"
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_agentLoc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="Agent Locator"
+            app:tab_icon="@drawable/map_marker_filled"
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_tickes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ticket_scanner"
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_mypicks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="My Picks"
+            app:tab_icon="@drawable/m_y_p_i_c_k_s"
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_wallet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="My Wallet"
+            app:tab_icon="@drawable/my_wallet_icon"
+            />
+    </com.ss.bottomnavigation.BottomNavigation>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

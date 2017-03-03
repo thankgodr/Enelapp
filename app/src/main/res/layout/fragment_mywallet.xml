@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shixels.thankgodrichard.enellottoapp.Payment.MyWallet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/availBalanceText"
+            android:text="@string/availBal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/availBalance"
+            android:layout_below="@id/availBalanceText"
+            android:textSize="40sp"
+            android:text="50,000.00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/availBalance"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/intBalText"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:text="@string/initBalace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/initBal"
+            android:layout_below="@id/intBalText"
+            android:textSize="33sp"
+            android:text="50,000.00"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

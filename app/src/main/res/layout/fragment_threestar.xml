@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="com.shixels.thankgodrichard.enellottoapp.Games.Threestar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/spinner"
+        android:layout_height="match_parent">
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/main"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/topDetails"
+            android:background="@drawable/blue_ccurve"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/choseText"
+                android:textSize="13.3sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/chooseText"
+                android:text="@string/chooseThree" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/choseHolder"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/choseText"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:hint="-"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:enabled="false"
+                    android:textColor="@color/chooseText"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/numbers_bakground"/>
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:textColor="@color/chooseText"
+                    android:maxLength="2"
+                    android:enabled="false"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/numbers_bakground"/>
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/chooseText"
+                    android:hint="-"
+                    android:maxLength="2"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:background="@drawable/numbers_bakground"/>
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    fancy:fb_fontIconResource="&#xf060;"
+                    fancy:fb_fontIconSize="16dp"
+                    fancy:fb_text=""
+                    fancy:fb_radius="90dp"
+                    fancy:fb_textColor="@color/chooseText"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_borderColor="@color/chooseText"
+                    fancy:fb_borderWidth="1dp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/topDetails"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent">
+                    <org.apmem.tools.layouts.FlowLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/selecteNum"
+                        app:flexWrap="wrap"
+                        app:justifyContent="center"
+                        app:alignItems="center"
+                        app:alignContent="space_around">
+                    </org.apmem.tools.layouts.FlowLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_marginTop="38dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_height="wrap_content">
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:background="@drawable/rounded_corners"
+                           android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:background="@drawable/left_corner"
+                                   android:layout_width="35dp"
+                                   android:scaleType="centerInside"
+                                   android:layout_height="34dp"
+                                   android:padding="7dp"
+                                   android:src="@drawable/dices"/>
+                               <TextView
+                                   android:layout_width="0dp"
+                                   android:layout_weight="1"
+                                   android:background="@drawable/right_corners"
+                                   android:paddingTop="7dp"
+                                   android:textColor="@android:color/white"
+                                   android:textSize="12sp"
+                                   android:paddingLeft="10dp"
+                                   android:layout_height="match_parent"
+                                   android:text="@string/pick4me"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_marginLeft="10dp"
+                           android:background="@drawable/rounded_corners_red"
+                           android:layout_height="wrap_content">
+
+                           <ImageView
+                               android:background="@drawable/left_corner_red"
+                               android:layout_width="35dp"
+                               android:scaleType="centerInside"
+                               android:layout_height="34dp"
+                               android:padding="7dp"
+                               android:src="@drawable/signin_icon"/>
+                           <TextView
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:background="@drawable/right_corners_red"
+                               android:paddingTop="7dp"
+                               android:textSize="12sp"
+                               android:textColor="@android:color/white"
+                               android:paddingLeft="10dp"
+                               android:layout_height="match_parent"
+                               android:text="@string/submitTicket"/>
+
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+                </LinearLayout>
+
+
+        </RelativeLayout>
+</FrameLayout>
